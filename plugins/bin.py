@@ -9,9 +9,7 @@ async def fix_j(dic_resp,gdn):
     k_prepaid = dic_resp.get("prepaid",None)
     k_l_country = dic_resp.get("country",None)
     if k_l_country is not None:
-        k_Country_Code = k_l_country.get("numeric",None)
-        if k_Country_Code is not None:
-            k_Country_Code = "+"+k_Country_Code
+        k_Area_Code = k_l_country.get("numeric",None)
         k_short_Name = k_l_country.get("alpha2",None)
         k_Country = k_l_country.get("name",None)
         k_emoji = k_l_country.get("emoji",None)
