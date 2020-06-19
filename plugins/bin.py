@@ -35,7 +35,7 @@ async def fix_j(dic_resp,gdn):
     strb = f"<u><b>Info About {gdn}</b></u>\n"
     for v in l:
         if v[1] is not None and "l_" not in v[0]:
-            strb += "**"+v[0].replace("k_","").capitalize().replace("_"," ")+" :** "+str(v[1]).capitalize()+"\n"
+            strb += "**"+v[0].replace("k_","").capitalize().replace("_"," ")+" :** `"+str(v[1]).capitalize()+"`\n"
     return(strb)
 
 async def bin_search(strin: int):
